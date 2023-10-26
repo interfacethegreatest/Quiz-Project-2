@@ -18,8 +18,8 @@
     </label>
     <label class="logo">Quiz Website</label>
     <ul>
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">Log in</a></li>
+      <li><a href="{% url 'index'%}" class="active">Home</a></li>
+      <li><a href="{% url 'new_page'%}">Log in</a></li>
     </ul>
   </nav>
   <section>
@@ -44,14 +44,18 @@
     </h3>
     <br>
     <div class="button-container">
-      <button class="sign-up-button">Sign Up</button>
-      <button class="log-in-button">Log In</button>
+      <button class="sign-up-button"><a href="{% url 'new_page' %}">Log In</a></button>
+      <button class="log-in-button"> <a href="{% url 'register' %}">Register</a></button>
   </div>
   <br>
   <br>
   <h5>
   Or, you can explore our quizzes and take them anonymously below,
   </h5>
+  <div class="button-container">
+    <button class="sign-up-button">Quiz List</button>
+  </div>
+
     </div>
   </section>
   

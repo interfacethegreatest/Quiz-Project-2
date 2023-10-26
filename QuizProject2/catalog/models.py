@@ -3,6 +3,14 @@ from django.urls import reverse
 from django.utils.translation import gettext as _
 import uuid
 
+class Order(models.Model):
+    STATUS = (
+        ('Pending', 'Pending'),
+        ('Out for delivery', 'Out for delivery'),
+        ('Delivered', 'Delivered'),
+        )
+    
+
 class Language(models.Model):
     class LanguageChoices(models.TextChoices):
         ENGLISH = 'English', _('English')

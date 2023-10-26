@@ -10,10 +10,11 @@ body {
     box-sizing: border-box;
 }
 body{
+    color : #2c3e50;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 nav{
-    background: #0082e6;
+    background: #33ccff;
     height: 60px;
     weight: 100%;
 }
@@ -154,7 +155,7 @@ a.active,a:hover{
 
 /* Styles for the Log In button */
 .log-in-button {
-    background-color: #007bff; /* Blue color */
+    background-color: #33ccff; /* Blue color */
     color: #fff; /* White text color */
     padding: 10px 40px; /* Make the button twice as wide */
     border: none;
