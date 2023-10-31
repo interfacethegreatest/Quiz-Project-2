@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <script src="https://kit.fontawesome.com/981f538841.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+  <nav>
+    <input type="checkbox" id = "check">
+    <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Quiz Website</label>
+    <ul>
+      <li><a href="{% url 'index'%}" class="active">Home</a></li>
+      <li><a href="{% url 'new_page'%}">Log out</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h1>Welcome, </h1>
+    <h2>User:  {{ user.username }}</h2>
+  </section>
+</html>

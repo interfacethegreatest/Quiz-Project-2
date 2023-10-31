@@ -1,0 +1,176 @@
+body {
+    background-color: beige;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    color : #2c3e50;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav{
+    background: #33ccff;
+    height: 60px;
+    weight: 100%;
+}
+label.logo{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height:80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+
+}
+
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 658px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    section{
+        background: url(bg1.jpg);
+    }
+}
+
+/* Add CSS styles for the content container */
+.content-container {
+    width: 50%; /* 100% - 30% margin (adjust as needed) */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px; /* Add padding inside the container */
+    background-color: #f0f0f0; /* Background color for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow for a subtle effect */
+
+    /* Set the height to 60% of the viewport height (adjust as needed) */
+    height: 80vh;
+
+    /* Add padding to the top to create space between the nav bar and content */
+    padding-top: 30px; /* Adjust the value as needed */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .content-container {
+        width: 90%; /* Adjust the width for smaller screens */
+        height: auto; /* Let the height be determined by content */
+        padding-top: 20px; /* Adjust the value for smaller screens */
+    }
+}
+
+/* Add CSS styles for the content container */
+.content-container {
+    /* Existing styles */
+}
+
+/* Styles for the button container */
+.button-container {
+    margin-top: 0%; /* Margin from the content container */
+    text-align: center; /* Center the buttons horizontally */
+}
+
+/* Styles for the Sign Up button */
+.sign-up-button {
+    background-color: #4CAF50; /* Green color */
+    color: #fff; /* White text color */
+    padding: 10px 40px; /* Make the button twice as wide */
+    border: none;
+    border-radius: 6px; /* Add rounded edges */
+    margin-right: 10%; /* Spacing between buttons */
+    transition: background-color 0.3s; /* Add smooth transition effect */
+}
+
+/* Styles for the Log In button */
+.log-in-button {
+    background-color: #33ccff; /* Blue color */
+    color: #fff; /* White text color */
+    padding: 10px 40px; /* Make the button twice as wide */
+    border: none;
+    border-radius: 6px; /* Add rounded edges */
+    transition: background-color 0.3s; /* Add smooth transition effect */
+}
+
+/* Hover styles for the buttons */
+.sign-up-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.log-in-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <script src="https://kit.fontawesome.com/981f538841.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+  <nav>
+    <input type="checkbox" id = "check">
+    <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Quiz Website</label>
+    <ul>
+      <li><a href="{% url 'index'%}" class="active">Home</a></li>
+      <li><a href="{% url 'new_page'%}">Log in</a></li>
+    </ul>
+  </nav>
+  <section>
+    <div class="content-container">
+      <!-- Your content goes inside this div -->
+     <h1>
+      Welcome to the Quiz Editor Application.
+     </h1>
+     <br>
+     <h5>
+      The website allows the user to generate a simple quiz or exam as well as individual questions in order to test your knowledge on a given subject.
+      These can then be made public for others to engage in also.
+      This website is currently under development and was created as a starter project to learn HTML & CSS.     
+    </h5>
+    <br>
+    <br>
+    <h5>If you have any further comments please email dell8799@yahoo.com</h5>
+    <br>
+    <br>
+    <h3>
+      In order to begin to generate tests and questions please sign in.
+    </h3>
+    <br>
+    <div class="button-container">
+      <button class="sign-up-button"><a href="{% url 'new_page' %}">Log In</a></button>
+      <button class="log-in-button"> <a href="{% url 'register' %}">Register</a></button>
+  </div>
+  <br>
+  <br>
+  <h5>
+  Or, you can explore our quizzes and take them anonymously below,
+  </h5>
+  <div class="button-container">
+    <button class="sign-up-button">Quiz List</button>
+  </div>
+
+    </div>
+  </section>
+  
+</body>
+</html>
